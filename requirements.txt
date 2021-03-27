@@ -1,4 +1,5 @@
 uvicorn==0.12.2
 fastapi==0.61.1
 sklearn==0.0
-tensorflow==2.4.0
+Keras==2.4.3
+Keras-Preprocessing==1.1.2
