@@ -45,7 +45,7 @@ def predict_quality(iris: WineInputs):
     prediction = float(str(main_model.predict_dict(dic=correct_x))[2:-2])
     
     return {'prediction': prediction}
-'''
+
 if __name__ == '__main__':
-    uvicorn.run(app,host='0.0.0.0',port=5000)
-'''
+    uvicorn.run(app,host='0.0.0.0')
+
