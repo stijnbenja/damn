@@ -8,3 +8,4 @@ pandas==1.1.5
 numpy==1.19.2
 pydantic==1.7.3
 joblib==1.0.0
+h5py==2.10.0
