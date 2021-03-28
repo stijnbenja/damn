@@ -18,7 +18,6 @@ main_model = classy.MainTensor(df,target_column)
 iterations = 1
 main_model.train(verb=0, nodes=8, epochs=iterations)
 
-print(df)
 
 app = FastAPI()
 
@@ -46,6 +45,7 @@ def predict_quality(iris: WineInputs):
     prediction = float(str(main_model.predict_dict(dic=correct_x))[2:-2])
     
     return {'prediction': prediction}
-
+'''
 if __name__ == '__main__':
     uvicorn.run(app,host='0.0.0.0',port=5000)
+'''
